@@ -25,7 +25,15 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 
+ <!-- analitic vercel -->
+     
     <script defer src="/_vercel/analytics/script.js"></script>
+
+    <script type="module">
+        import { inject } from '@vercel/analytics';
+        inject();
+      </script>
+      
 
 </head>
 <body>

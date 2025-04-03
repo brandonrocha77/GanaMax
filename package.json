@@ -1,0 +1,23 @@
+{
+  "name": "mi-sitio.web",
+  "version": "1.0.0",
+  "description": "Granamax es tu mejor aliado en el mundo de las apuestas deportivas. Análisis precisos, estrategias ganadoras y oportunidades únicas para maximizar tus resultados. ¡Convierte la información en ganancias con Granamax!",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonrocha77/GanaMax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonrocha77/GanaMax/issues"
+  },
+  "homepage": "https://github.com/brandonrocha77/GanaMax#readme",
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0"
+  }
+}
