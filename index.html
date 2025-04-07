@@ -2,40 +2,38 @@
 <html lang="es">
 <head>
     <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '584321504625024');
-    fbq('track', 'PageView');
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '584321504625024');
+        fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=584321504625024&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=584321504625024&ev=PageView&noscript=1"/>
+    </noscript>
     <!-- End Meta Pixel Code -->
-     
+
+    
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gana Max - Análisis Deportivos</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 
- <!-- analitic vercel -->
-     
-     <script defer src="https://vercel.com/analytics/script.js"></script>
-
-
+    <!-- Analítica Vercel -->
+    <script defer src="https://vercel.com/analytics/script.js"></script>
     <script type="module">
         import { inject } from '@vercel/analytics';
         inject();
-      </script>
-      
-
+    </script>
 </head>
 <body>
 
@@ -55,19 +53,30 @@
                 Este mes estamos realizando un reto de análisis VIP completamente <b>GRATIS</b> por 30 días.  
                 Únete ahora y descubre estrategias deportivas exclusivas.
             </p>
-            <a href="https://t.me/GanaMaxBot?start=w38138373" class="btn">Entrar al Grupo Gratis</a>
+
+            <!-- Botones WhatsApp y Telegram -->
+            <div class="botones-contacto">
+                <a href="https://api.whatsapp.com/send/?phone=17342513966&text=Hola%20quisiera%20entar%20al%20grupo%20VIP%20gratis&app_absent=0" class="btn whatsapp-btn">
+                    <img src="assets/img/iconos/whatsapp-logo.png" alt="WhatsApp"> WhatsApp
+                </a>
+                <a href="https://t.me/GanaMaxBot?start=w38138373" class="btn telegram-btn">
+                    <img src="assets/img/iconos/Telegram-logo.png" alt="Telegram"> Telegram
+                </a>
+            </div>
         </div>
 
-        <!-- Texto "Desliza para ver más" dentro del video pero fuera del cuadro -->
+        <!-- Texto "Desliza para ver más" -->
         <div class="flecha-indicadora">⬇ Desliza para ver más ⬇</div>
     </div>
 
     <!-- Sección de Paquetes -->
     <section class="paquetes">
         <h2>⚡ Combinadas Diarias</h2>
-        <strong> <p>📌 ¡Obtén combinadas todos los días con cuotas espectaculares y los mejores análisis!</p>
-            <p>📈 En la mayoría de casos, **en un solo día se recupera lo invertido** y se puede disfrutar el resto del tiempo.</p></strong>
-            <h3>🔥 Elige el plan que más te convenga:</h3>
+        <strong>
+            <p>📌 ¡Obtén combinadas todos los días con cuotas espectaculares y los mejores análisis!</p>
+            <p>📈 En la mayoría de casos, <b>en un solo día se recupera lo invertido</b> y se puede disfrutar el resto del tiempo.</p>
+        </strong>
+        <h3>🔥 Elige el plan que más te convenga:</h3>
         
         <div class="paquetes-container">
             <div class="paquete">
@@ -84,12 +93,11 @@
         </div>
 
         <h2 class="titulo-paquetes">📊 Grupo VIP - Análisis Exclusivos</h2>
-        
         <ul>
             <strong>
-                 <li>✅Análisis detallados✅ con cuotas seguras.</li>
-            <li>✅Estrategias profesionales✅ para maximizar ganancias.</li>
-            <li>✅Soporte personalizado✅ y consejos de expertos.</li>
+                <li>✅Análisis detallados✅ con cuotas seguras.</li>
+                <li>✅Estrategias profesionales✅ para maximizar ganancias.</li>
+                <li>✅Soporte personalizado✅ y consejos de expertos.</li>
             </strong>
         </ul>
 
@@ -125,7 +133,7 @@
         </a>
     </div>
 
-    <!-- Sección de derechos reservados -->
+    <!-- Footer -->
     <footer class="footer">
         <p>© 2025 GanaMax - Todos los derechos reservados.</p>
     </footer>
