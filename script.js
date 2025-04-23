@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         const content = document.querySelector('.content');
         content.classList.add('visible');
-    }, 900); // aparece después del balón
+    }, 100); // aparece después del balón
 });
 
 // Contadores de estadísticas
