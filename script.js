@@ -35,11 +35,7 @@ window.addEventListener('load', () => {
 });
 
 // Contadores de estadísticas
-function iniciarContadores() {
-    animarContador("contador-miembros", 0, 1243, 1500);
-    animarContador("contador-aciertos", 0, 92, 1500);
-    animarContador("contador-beneficio", 0, 232, 2000, true);
-}
+
 
 function animarContador(id, inicio, fin, duracion, esPorcentaje = false) {
     const elemento = document.getElementById(id);
@@ -69,11 +65,7 @@ function mostrarContenido() {
 }
 
 // Contadores animados
-function animarContadores() {
-    animar("#contador-miembros", 872, 2000);
-    animar("#contador-aciertos", 47, 2000);
-    animar("#contador-beneficio", 232, 2000, "%");
-}
+
 
 function animar(selector, valorFinal, duracion, sufijo = "") {
     const elemento = document.querySelector(selector);
