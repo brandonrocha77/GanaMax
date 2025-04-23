@@ -34,7 +34,7 @@ body {
     width: 600px;
     height: 600px;
     z-index: 999;
-    animation: moverBalon 1.8s ease-out forwards;
+    animation: moverBalon 0.2s ease-out forwards;
     pointer-events: none;
   }
   
@@ -72,7 +72,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
     opacity: 0;
-    transition: opacity 1.3s ease;
+    transition: opacity 0.2s ease;
   }
   .content.visible {
     opacity: 1;
