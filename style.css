@@ -130,14 +130,60 @@ body {
   }
   
   /* === ESTADÍSTICAS === */
-  .estadisticas {
+  
+  .estadisticas-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
-    background: #1e1e1e;
-    padding: 30px 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
   }
+  
+  .estadistica {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    color: #FFD700;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    transition: transform 0.3s;
+  }
+  
+  .estadistica:hover {
+    transform: scale(1.05);
+  }
+  
+  .estadistica h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .estadistica div {
+    font-size: 24px;
+  }
+  
+  /* Responsive: mejorar vista en teléfonos */
+  @media (max-width: 600px) {
+    .estadisticas-container {
+      gap: 10px;
+    }
+  
+    .estadistica {
+      width: 100px;
+      padding: 10px;
+    }
+  
+    .estadistica h3 {
+      font-size: 12px;
+    }
+  
+    .estadistica div {
+      font-size: 18px;
+    }
+  }
+  
+
   .contador-box {
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
