@@ -1,37 +1,11 @@
-// Contador próximo análisis VIP
-function startAnalisisCountdown() {
-    let minutos = 27;
-    let segundos = 0;
-    const elemento = document.getElementById("analisis-timer");
 
-    function actualizar() {
-        if (minutos === 0 && segundos === 0) {
-            elemento.textContent = "¡ya fue publicado!";
-            return;
-        }
-
-        if (segundos === 0) {
-            minutos--;
-            segundos = 59;
-        } else {
-            segundos--;
-        }
-
-        const m = minutos.toString().padStart(2, '0');
-        const s = segundos.toString().padStart(2, '0');
-        elemento.textContent = `${m}:${s}`;
-        setTimeout(actualizar, 1000);
-    }
-
-    actualizar();
-}
 
 // Mostrar contenido con retraso (animación inicial)
 window.addEventListener('load', () => {
     setTimeout(() => {
         const content = document.querySelector('.content');
         content.classList.add('visible');
-    }, 100); // aparece después del balón
+    }, 500); // aparece después del balón
 });
 
 // Contadores de estadísticas
